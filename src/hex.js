@@ -4,7 +4,7 @@ const btn = document.getElementById("btn");
 const color = document.querySelector(".color");
 
 btn.addEventListener("click", function() {
-  console.log("click");
+  //start with hashtag
   let hexColor = "#";
 
   for (let i = 0; i < 6; i++) {
@@ -15,6 +15,7 @@ btn.addEventListener("click", function() {
   document.body.style.backgroundColor = hexColor;
 });
 
+//get random number within array
 function getRandomNum() {
   return Math.floor(Math.random() * hex.length);
 }
